@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>HomeTemp</Name>
+  <Description>
+    [h3]Home Temp Monitor[/h3]
+  </Description>
+  <Registry>https://hub.docker.com/u/jasonbean/home_temp_monitor_webpack/</Registry>
+  <Repository>jasonbean/home_temp_monitor_webpack</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/hometemp/</HostDir>
+      <ContainerDir>/usr/src/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <Icon>https://raw.githubusercontent.com/jason-bean/personal-templates/master/nodejs-512.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Other</Category>
+  <Date>2017-02-16</Date>
+  <Support></Support>
+</Container>
