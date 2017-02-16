@@ -4,8 +4,8 @@
   <Description>
     [h3]Home Temp Monitor[/h3]
   </Description>
-  <Registry>https://hub.docker.com/u/jasonbean/home_temp/</Registry>
-  <Repository>jasonbean/home_temp</Repository>
+  <Registry>https://hub.docker.com/u/jasonbean/home-temp/</Registry>
+  <Repository>jasonbean/home-temp</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
