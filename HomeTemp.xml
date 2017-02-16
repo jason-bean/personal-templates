@@ -22,7 +22,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/hometemp/</HostDir>
-      <ContainerDir>/usr/src/app</ContainerDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
