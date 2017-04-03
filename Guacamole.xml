@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Apache Guacamole Test</Name>
+  <Description>
+    [h3]Apache Guacamole[/h3]Apache Guacamole is a clientless remote desktop gateway. It supports standard protocols like VNC and RDP.[br][br]
+    [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]
+    [b]Be sure to change the Host port from [span style=\'color: #E80000;\']8080[/span] to [span style=\'color: #E80000;\']something else[/span] as [span style=\'color: #E80000;\']8080[/span] is quite a common port.[/b][br][br]
+    [b]/config[/b] : this path is where Apache Guacamole will store it\'s properties files, extensions, and the database which contains data for users and connections.[br]
+    Initial username and password are [b]guacadmin[/b]
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/jasonbean/guacamole-test/</Registry>
+  <Repository>jasonbean/guacamole-test</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>OPT_MYSQL</Name>
+      <Value>Y</Value>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Name>OPT_LDAP</Name>
+      <Value>N</Value>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Name>OPT_DUO</Name>
+      <Value>N</Value>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Guacamole-Test</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Banner>http://i.imgur.com/tZ5x8bc.png</Banner>
+  <Icon>http://i.imgur.com/eflpez4.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Management Network:Other</Category>
+  <Date>2017-02-08</Date>
+  <Support>http://lime-technology.com/forum/index.php?topic=56614.0</Support>
+</Container>
