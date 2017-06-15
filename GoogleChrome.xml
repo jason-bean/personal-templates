@@ -21,15 +21,17 @@
     Name="Chrome Debugging Protocol Port"
     Target="9222"
     Default="9222"
+    Mode="tcp"
     Description="Chrome Debugging Protocol Port"
     Display="always"
     Required="true">9222</Config>
-    <Config
-      Type="Port"
-      Name="Chrome VNC Port"
-      Target="5900"
-      Default="5900"
-      Description="Chrome VNC Port"
-      Display="always"
-      Required="true">5900</Config>
+  <Config
+    Type="Port"
+    Name="Chrome VNC Port"
+    Target="5900"
+    Default="5900"
+    Mode="tcp"
+    Description="Chrome VNC Port"
+    Display="always"
+    Required="true">5900</Config>
 </Container>
