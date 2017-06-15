@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>GoogleChrome</Name>
+  <Description>
+    [h3]Google Chrome[/h3]
+  </Description>
+  <Registry>https://hub.docker.com/u/c0b0/chrome-stable/</Registry>
+  <Repository>c0b0/chrome-stable</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9222</HostPort>
+        <ContainerPort>9222</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5900</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/hometemp/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version></Version>
+  <Icon>https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png</Icon>
+  <Beta>False</Beta>
+  <Category>Network:Other</Category>
+  <Date>2017-06-15</Date>
+  <Support></Support>
+</Container>
