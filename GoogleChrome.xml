@@ -15,23 +15,13 @@
       <Port>
         <HostPort>9222</HostPort>
         <ContainerPort>9222</ContainerPort>
-        <Protocol>tcp</Protocol>
       </Port>
       <Port>
         <HostPort>5900</HostPort>
         <ContainerPort>5900</ContainerPort>
-        <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/hometemp/</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Version></Version>
   <Icon>https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png</Icon>
   <Beta>False</Beta>
   <Category>Network:Other</Category>
