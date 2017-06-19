@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name Default="GoogleChrome">GoogleChrome</Name>
+  <Registry>https://registry.hub.docker.com/u/jasonbean/chrome/</Registry>
+  <Repository>jasonbean/chrome</Repository>
+  <Priviledged>false</Priviledged>
+  <Network Default="bridge">bridge</Network>
+  <Icon>https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png</Icon>
+  <Category>Network:Other</Category>
+  <Config
+    Type="Path"
+    Name="Chrome Home Directory"
+    Target="/home/chrome"
+    Default="/mnt/user/appdata/chrome"
+    Mode="rw"
+    Description="This is where Chrome will store user data."
+    Required="true">/mnt/user/appdata/chrome</Config>
+  <Config
+    Type="Port"
+    Name="Chrome VNC Port"
+    Target="5900"
+    Default="5900"
+    Mode="tcp"
+    Description="Chrome VNC Port"
+    Display="always"
+    Required="true">5900</Config>
+</Container>
