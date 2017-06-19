@@ -14,7 +14,7 @@
     Default="/mnt/user/appdata/chrome-incognito"
     Mode="rw"
     Description="This is where Chrome will store user data."
-    Required="true">/mnt/user/appdata/chrome</Config>
+    Required="true">/mnt/user/appdata/chrome-incognito</Config>
   <Config
     Type="Port"
     Name="Chrome VNC Port"
