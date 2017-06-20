@@ -4,6 +4,7 @@
   <Registry>https://hub.docker.com/u/jasonbean/home_temp_monitor_webpack/</Registry>
   <Repository>jasonbean/home_temp_monitor_webpack</Repository>
   <Privileged>false</Privileged>
+  <Network Default="bridge">bridge</Network>
   <Icon>https://raw.githubusercontent.com/jason-bean/personal-templates/master/nodejs-512.png</Icon>
   <Category>Network:Other</Category>
   <Config
@@ -15,7 +16,7 @@
     Description="Where web app config data goes."
     Display="always"
     Required="true">/mnt/user/appdata/hometemp/</Config>
-    <Config
+  <Config
     Type="Port"
     Name="App Web Port"
     Target="8080"
