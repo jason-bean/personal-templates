@@ -22,5 +22,6 @@
     Default="/mnt/user/appdata/hometemp/"
     Mode="rw"
     Description="Where web app config data goes."
+    Display="always"
     Required="true">/mnt/user/appdata/hometemp/</Config>
 </Container>
