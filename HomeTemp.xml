@@ -8,11 +8,11 @@
   <Category>Network:Other</Category>
   <Config
     Type="Port"
-    Name="Web Port"
+    Name="App Web Port"
     Target="8080"
     Default="8080"
     Mode="tcp"
-    Description="Web Port"
+    Description="App Web Port"
     Display="always"
     Required="true">8080</Config>
   <Config
