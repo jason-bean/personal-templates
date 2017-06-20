@@ -1,35 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Container>
-  <Name>HomeTemp</Name>
-  <Description>
-    [h3]Home Temp Monitor[/h3]
-  </Description>
+<Container version="2">
+  <Name Default="HomeTemp">HomeTemp</Name>
   <Registry>https://hub.docker.com/u/jasonbean/home_temp_monitor_webpack/</Registry>
   <Repository>jasonbean/home_temp_monitor_webpack</Repository>
-  <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Environment/>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>8080</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/hometemp/</HostDir>
-      <ContainerDir>/config</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Version></Version>
   <Icon>https://raw.githubusercontent.com/jason-bean/personal-templates/master/nodejs-512.png</Icon>
-  <Beta>False</Beta>
   <Category>Network:Other</Category>
-  <Date>2017-02-16</Date>
-  <Support></Support>
+  <Config
+    Type="Port"
+    Name="Web Port"
+    Target="8080"
+    Default="8080"
+    Mode="tcp"
+    Description="Web Port"
+    Display="always"
+    Required="true">8080</Config>
+  <Config
+    Type="Path"
+    Name="Web App Config Directory"
+    Target="/config"
+    Default="/mnt/user/appdata/hometemp/"
+    Mode="rw"
+    Description="Where web app config data goes."
+    Required="true">/mnt/user/appdata/hometemp/</Config>
 </Container>
