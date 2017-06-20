@@ -7,15 +7,6 @@
   <Icon>https://raw.githubusercontent.com/jason-bean/personal-templates/master/nodejs-512.png</Icon>
   <Category>Network:Other</Category>
   <Config
-    Type="Port"
-    Name="App Web Port"
-    Target="8080"
-    Default="8080"
-    Mode="tcp"
-    Description="App Web Port"
-    Display="always"
-    Required="true">8080</Config>
-  <Config
     Type="Path"
     Name="Web App Config Directory"
     Target="/config"
@@ -24,4 +15,13 @@
     Description="Where web app config data goes."
     Display="always"
     Required="true">/mnt/user/appdata/hometemp/</Config>
+    <Config
+    Type="Port"
+    Name="App Web Port"
+    Target="8080"
+    Default="8080"
+    Mode="tcp"
+    Description="App Web Port"
+    Display="always"
+    Required="true">8080</Config>
 </Container>
