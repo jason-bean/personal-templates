@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name Default="Calibre-server">Calibre-server</Name>
+  <Description>
+    Calibre is an e-book managament software[br][br]
+    [b][u][span style='color: #E80000;']Calibre Library[/span][/u][/b][br]
+    [b]/calibre-library[/b] This is where the calibre configuration and library files will reside[br][br]
+    Don't forget to enter in the host port and app folder.
+  </Description>
+  <Overview>
+    Calibre is an e-book management software. This docker app allows you to serve your e-books to remote clients through the web browser. Note: this is the server version, not the full GUI.
+  </Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=39413.0</Support>
+  <Registry>https://registry.hub.docker.com/u/jasonbean/docker-calibre/</Registry>
+  <GitHub>https://github.com/jason-bean/docker-calibre</GitHub>
+  <Repository>jason-bean/docker-calibre</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Network Default="bridge">bridge</Network>
+  <Config
+    Type="Port"
+    Name="Web UI"
+    Target="8080"
+    Default="8080"
+    Mode="tcp"
+    Description="Web UI"
+    Display="always"
+    Required="true">8080</Config>
+  <Config
+    Type="Path"
+    Name="Calibre Library Directory"
+    Target="/calibre-library"
+    Default="/mnt/user/calibre-library"
+    Mode="rw"
+    Description="This is where Calibre Server will store its book library."
+    Display="always"
+    Required="true">/mnt/user/calibre-library</Config>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <Icon>http://calibre-ebook.com/favicon.ico</Icon>
+  <Beta>False</Beta>
+  <Category>MediaServer:Books</Category>
+</Containers>
