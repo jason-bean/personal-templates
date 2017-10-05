@@ -26,6 +26,14 @@
     Description="Web UI"
     Display="always"
     Required="true">8080</Config>
+    <Config
+    Type="Variable"
+    Name="URL Prefix"
+    Target="URL_PREFIX"
+    Default=""
+    Description="Container Variable: URL_PREFIX"
+    Display="always"
+    Required="false"></Config>
   <Config
     Type="Path"
     Name="Calibre Library Directory"
@@ -35,6 +43,15 @@
     Description="This is where Calibre Server will store its book library."
     Display="always"
     Required="true">/mnt/user/calibre-library</Config>
+    <Config
+    Type="Path"
+    Name="Calibre Import Directory"
+    Target="/calibre-import"
+    Default="/mnt/user/calibre-import"
+    Mode="rw"
+    Description="This is where Calibre Server look for new books to add to the library."
+    Display="always"
+    Required="true">/mnt/user/calibre-import</Config>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <Icon>http://calibre-ebook.com/favicon.ico</Icon>
   <Beta>False</Beta>
