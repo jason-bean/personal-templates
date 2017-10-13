@@ -12,12 +12,20 @@
   <Privileged>false</Privileged>
   <Network Default="bridge">bridge</Network>
   <Config
+    Type="Variable"
+    Name="Check Frequency Minutes"
+    Target="FREQ_MINUTES"
+    Default=""
+    Description="Container Variable: FREQ_MINUTES"
+    Display="always"
+    Required="true"></Config>
+  <Config
     Type="Path"
     Name="Calibre Library Directory"
-    Target="/godaddy-dyndns"
+    Target="/config"
     Default="/mnt/user/appdata/godaddy-dyndns"
     Mode="rw"
-    Description="This is where configuration and scripts are stored."
+    Description="This is where configuration and logs stored."
     Display="always"
     Required="true">/mnt/user/appdata/godaddy-dyndns</Config>
   <Icon>https://img1.wsimg.com/fos/help-v2/2.22.2-543/img/gd_logo.png</Icon>
