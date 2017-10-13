@@ -15,10 +15,10 @@
     Type="Variable"
     Name="Check Frequency Minutes"
     Target="FREQ_MINUTES"
-    Default=""
+    Default="30"
     Description="Container Variable: FREQ_MINUTES"
     Display="always"
-    Required="true"></Config>
+    Required="true">30</Config>
   <Config
     Type="Path"
     Name="Calibre Library Directory"
