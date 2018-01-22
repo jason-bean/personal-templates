@@ -33,6 +33,11 @@
       <Value>N</Value>
       <Mode/>
     </Variable>
+    <Variable>
+      <Name>OPT_OPENID</Name>
+      <Value>N</Value>
+      <Mode/>
+    </Variable>
   </Environment>
   <Networking>
     <Mode>bridge</Mode>
