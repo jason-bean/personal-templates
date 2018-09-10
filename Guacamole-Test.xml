@@ -8,8 +8,8 @@
     [b]/config[/b] : this path is where Apache Guacamole will store it\'s properties files, extensions, and the database which contains data for users and connections.[br]
     Initial username and password are [b]guacadmin[/b]
   </Description>
-  <Registry>https://registry.hub.docker.com/u/jasonbean/guacamole-test/</Registry>
-  <Repository>jasonbean/guacamole-test</Repository>
+  <Registry>https://unraid:5000/guacamole-test/</Registry>
+  <Repository>unraid:5000/guacamole-test</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
